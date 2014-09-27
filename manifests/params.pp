@@ -4,6 +4,8 @@ class cinder::params {
   $cinder_conf = '/etc/cinder/cinder.conf'
   $cinder_paste_api_ini = '/etc/cinder/api-paste.ini'
 
+  $emc_vnx_package = 'naviseccli'
+
   if $::osfamily == 'Debian' {
     $package_name       = 'cinder-common'
     $client_package     = 'python-cinderclient'
